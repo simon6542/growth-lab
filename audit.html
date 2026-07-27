@@ -316,6 +316,15 @@
 
 <script>
 (function () {
+  var u = document.getElementById('f-url');
+  function fixScheme() {
+    var v = u.value.trim();
+    if (v && !/^https?:\/\//i.test(v)) u.value = 'https://' + v.replace(/^\/+/, '');
+  }
+  u.addEventListener('change', fixScheme);
+  u.addEventListener('blur', fixScheme);
+})();
+(function () {
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var els = document.querySelectorAll('.reveal');
   if (reduced || !('IntersectionObserver' in window)) {
