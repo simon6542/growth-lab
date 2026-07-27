@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>무료 5분 진단 — 그로스랩 | K-뷰티 아마존 광고 수익성</title>
+<link rel="canonical" href="https://howmuchlab.com/growth-lab/audit.html">
+<meta name="description" content="스토어프론트 링크만 보내주세요. 공개 데이터 기반으로 리스팅·리뷰·가격 경쟁력을 점수화한 무료 진단 리포트를 48시간 내 보내드립니다. 영업 전화 없음.">
+<meta property="og:title" content="아마존 무료 5분 진단 — 그로스랩">
+<meta property="og:description" content="스토어프론트 링크 하나로 받는 무료 진단 리포트. 영업 전화 없음, 조건 없음.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+  :root {
+    --ink: #171717;
+    --body: #4d4d4d;
+    --mute: #8f8f8f;
+    --faint: #a1a1a1;
+    --hairline: #ebebeb;
+    --hairline-soft: #f2f2f2;
+    --canvas: #fafafa;
+    --elevated: #ffffff;
+    --link: #0070f3;
+    --g-dev-a: #007cf0; --g-dev-b: #00dfd8;
+    --g-pre-a: #7928ca; --g-pre-b: #ff0080;
+    --g-shp-a: #ff4d4d; --g-shp-b: #f9cb28;
+    --sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Noto Sans KR", Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--sans); color: var(--ink); background: var(--canvas); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+  .wrap-narrow { max-width: 680px; margin: 0 auto; padding: 0 24px; }
+
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s cubic-bezier(.21,.47,.32,.98), transform .7s cubic-bezier(.21,.47,.32,.98); }
+  .reveal.in { opacity: 1; transform: none; }
+  .reveal.d1 { transition-delay: .08s; }
+  .reveal.d2 { transition-delay: .16s; }
+  .reveal.d3 { transition-delay: .24s; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    html { scroll-behavior: auto; }
+    .hero-mesh { animation: none !important; }
+  }
+
+  header {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(250,250,250,.8);
+    backdrop-filter: saturate(180%) blur(12px);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid var(--hairline);
+  }
+  .nav { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; }
+  .logo { font-size: 17px; font-weight: 600; letter-spacing: -0.5px; display: flex; align-items: center; gap: 8px; color: var(--ink); text-decoration: none; }
+  .logo .mark { width: 18px; height: 18px; border-radius: 4px; background: conic-gradient(from 180deg, var(--g-dev-a), var(--g-dev-b), var(--g-pre-b), var(--g-shp-b), var(--g-dev-a)); }
+  .nav-links { display: flex; align-items: center; gap: 4px; }
+  .nav-links a.nl { color: var(--body); text-decoration: none; font-weight: 400; font-size: 14px; padding: 8px 12px; border-radius: 9999px; transition: color .15s, background .15s; }
+  .nav-links a.nl:hover { color: var(--ink); background: var(--hairline-soft); }
+  .nav-links a.nav-cta { margin-left: 8px; background: var(--ink); color: #fff; text-decoration: none; font-size: 14px; font-weight: 500; line-height: 20px; padding: 6px 12px; border-radius: 6px; transition: opacity .15s; }
+  .nav-links a.nav-cta:hover { opacity: .85; }
+
+  .hero { position: relative; padding: 104px 0 64px; text-align: center; overflow: hidden; }
+  .hero-mesh {
+    position: absolute; inset: -10% 8% auto; height: 80%; pointer-events: none; z-index: 0;
+    background:
+      radial-gradient(32% 40% at 28% 34%, color-mix(in srgb, var(--g-dev-a) 16%, transparent), transparent 70%),
+      radial-gradient(28% 36% at 50% 16%, color-mix(in srgb, var(--g-dev-b) 12%, transparent), transparent 70%),
+      radial-gradient(30% 38% at 72% 36%, color-mix(in srgb, var(--g-pre-b) 10%, transparent), transparent 70%);
+    filter: blur(40px);
+    -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent 96%);
+    mask-image: linear-gradient(to bottom, #000 55%, transparent 96%);
+    animation: mesh-drift 14s ease-in-out infinite alternate;
+  }
+  @keyframes mesh-drift {
+    from { transform: translate3d(-2%, 0, 0) scale(1); }
+    to   { transform: translate3d(2%, 3%, 0) scale(1.06); }
+  }
+  .hero > .wrap { position: relative; z-index: 1; }
+  .eyebrow { font-family: var(--mono); font-size: 12px; font-weight: 500; line-height: 16px; letter-spacing: 1px; text-transform: uppercase; color: var(--mute); }
+  .hero h1 { margin-top: 20px; font-size: clamp(32px, 5.6vw, 54px); font-weight: 600; letter-spacing: -0.05em; line-height: 1.08; }
+  .hero h1 em { font-style: normal; background: linear-gradient(90deg, var(--g-dev-a), var(--g-pre-a) 55%, var(--g-pre-b)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .hero .lede { margin: 22px auto 0; font-size: 17px; line-height: 1.65; color: var(--body); max-width: 620px; }
+  .hero .zero { margin: 20px auto 0; display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+  .zero span { font-family: var(--mono); font-size: 12px; color: var(--mute); border: 1px solid var(--hairline); background: var(--elevated); border-radius: 100px; padding: 6px 14px; }
+
+  section { padding: 72px 0; }
+  section.band { background: var(--elevated); border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); }
+  h2 { font-size: clamp(24px, 3.4vw, 30px); font-weight: 600; letter-spacing: -0.04em; line-height: 1.25; margin-top: 14px; }
+  .sub { color: var(--body); margin: 12px 0 36px; font-size: 16px; max-width: 640px; }
+
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .card { background: var(--elevated); border: 1px solid var(--hairline); border-radius: 12px; padding: 24px; box-shadow: 0 1px 1px rgba(0,0,0,.04); text-align: left; }
+  section.band .card { background: var(--canvas); }
+  .card .num { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: 1px; color: var(--mute); }
+  .card h3 { font-size: 16px; font-weight: 600; letter-spacing: -0.02em; margin: 10px 0 8px; }
+  .card p { font-size: 14px; line-height: 1.6; color: var(--body); }
+
+  /* form */
+  .form-box { background: var(--elevated); border: 1px solid var(--hairline); border-radius: 16px; padding: 36px 32px; box-shadow: 0 1px 1px rgba(0,0,0,.04); }
+  .field { margin-bottom: 22px; text-align: left; }
+  .field label { display: block; font-size: 14px; font-weight: 600; letter-spacing: -0.01em; margin-bottom: 8px; }
+  .field label .opt { font-weight: 400; color: var(--mute); font-size: 12px; margin-left: 6px; }
+  .field .hint { font-size: 12px; color: var(--mute); margin-top: 6px; line-height: 1.5; }
+  .field input[type="url"], .field input[type="email"], .field input[type="text"], .field select, .field textarea {
+    width: 100%; font-family: var(--sans); font-size: 15px; color: var(--ink);
+    background: var(--canvas); border: 1px solid var(--hairline); border-radius: 8px;
+    padding: 12px 14px; transition: border-color .15s, box-shadow .15s;
+    appearance: none; -webkit-appearance: none;
+  }
+  .field select { background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%238f8f8f' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; }
+  .field textarea { min-height: 96px; resize: vertical; }
+  .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--ink); box-shadow: 0 0 0 3px rgba(23,23,23,.08); }
+  .consent { display: flex; align-items: flex-start; gap: 10px; margin: 4px 0 26px; text-align: left; }
+  .consent input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--ink); margin-top: 2px; flex-shrink: 0; cursor: pointer; }
+  .consent label { font-size: 13px; color: var(--body); cursor: pointer; line-height: 1.55; }
+  .consent a { color: var(--link); text-decoration: none; }
+  .consent a:hover { text-decoration: underline; }
+  .btn-pill {
+    display: inline-flex; align-items: center; justify-content: center;
+    height: 48px; padding: 0 28px; border-radius: 100px;
+    background: var(--ink); color: #fff; font-size: 16px; font-weight: 500;
+    text-decoration: none; border: 1px solid var(--ink); cursor: pointer;
+    font-family: var(--sans); transition: opacity .15s; width: 100%;
+  }
+  .btn-pill:hover { opacity: .85; }
+  .form-note { font-size: 12px; color: var(--faint); margin-top: 16px; text-align: center; line-height: 1.6; }
+
+  /* steps */
+  .step-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+  .step { background: var(--canvas); border: 1px solid var(--hairline); border-radius: 12px; padding: 24px; text-align: left; }
+  .step .s-num { font-family: var(--mono); font-size: 13px; font-weight: 500; color: var(--mute); display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border: 1px solid var(--hairline); border-radius: 9999px; background: var(--elevated); }
+  .step h3 { font-size: 16px; font-weight: 600; letter-spacing: -0.02em; margin: 12px 0 6px; }
+  .step p { font-size: 14px; line-height: 1.6; color: var(--body); }
+
+  .faq-item { border-bottom: 1px solid var(--hairline); padding: 22px 0; text-align: left; }
+  .faq-item:first-of-type { border-top: 1px solid var(--hairline); }
+  .faq-item h3 { font-size: 15px; font-weight: 600; letter-spacing: -0.02em; }
+  .faq-item h3::before { content: "Q "; font-family: var(--mono); color: var(--link); font-weight: 500; }
+  .faq-item p { margin-top: 10px; font-size: 14px; line-height: 1.7; color: var(--body); max-width: 720px; }
+
+  footer { border-top: 1px solid var(--hairline); padding: 48px 0; font-size: 13px; color: var(--mute); background: var(--canvas); }
+  footer strong { color: var(--body); font-weight: 600; }
+
+  @media (max-width: 640px) {
+    .nav-links a.nl { display: none; }
+    .hero { padding: 80px 0 48px; }
+    section { padding: 56px 0; }
+    .form-box { padding: 28px 20px; }
+  }
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5GXQXQES4V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5GXQXQES4V');
+</script>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-180.png">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html"><span class="mark"></span>그로스랩</a>
+    <nav class="nav-links">
+      <a class="nl" href="index.html#service">서비스</a>
+      <a class="nl" href="sample-report.html">샘플 리포트</a>
+      <a class="nl" href="index.html#stories">실전기</a>
+      <a class="nav-cta" href="#apply">무료 진단 신청</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-mesh"></div>
+  <div class="wrap">
+    <div class="eyebrow reveal">Free Audit · No Strings Attached</div>
+    <h1 class="reveal d1">스토어 링크 하나로,<br><em>새는 곳부터 보여드립니다</em></h1>
+    <p class="lede reveal d2">스토어프론트(또는 대표 ASIN) 링크만 보내주세요. 아마존에 공개된 데이터만으로 리스팅·리뷰·가격 경쟁력을 점수화한 진단 리포트를 48시간 내 이메일로 보내드립니다.</p>
+    <div class="zero reveal d3">
+      <span>영업 전화 없음</span>
+      <span>계정 접근 불필요</span>
+      <span>비용 0원</span>
+    </div>
+  </div>
+</div>
+
+<section id="what" class="band">
+  <div class="wrap" style="text-align:center">
+    <div class="eyebrow reveal">What You Get</div>
+    <h2 class="reveal">리포트에 담기는 세 가지</h2>
+    <p class="sub reveal d1" style="margin-left:auto;margin-right:auto">막연한 조언이 아니라, 지금 그 리스팅에서 확인되는 사실만 담습니다.</p>
+    <div class="card-grid">
+      <div class="card reveal">
+        <div class="num">01</div>
+        <h3>리스팅 상태 점수</h3>
+        <p>타이틀·불릿·A+·이미지 구성을 100점 만점으로 점수화하고, 감점 사유를 항목별로 표시합니다.</p>
+      </div>
+      <div class="card reveal d1">
+        <div class="num">02</div>
+        <h3>경쟁 포지션 비교</h3>
+        <p>같은 검색 결과에 노출되는 경쟁 제품 대비 리뷰 수·평점·가격대가 어느 위치인지 비교합니다.</p>
+      </div>
+      <div class="card reveal d2">
+        <div class="num">03</div>
+        <h3>지금 고칠 것 3가지</h3>
+        <p>광고비를 늘리기 전에 먼저 고쳐야 하는 우선순위 3가지를 실행 가능한 형태로 정리합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="apply">
+  <div class="wrap-narrow" style="text-align:center">
+    <div class="eyebrow reveal">Apply</div>
+    <h2 class="reveal">무료 진단 신청</h2>
+    <p class="sub reveal d1" style="margin-left:auto;margin-right:auto">아래 두 가지만 필수입니다. 나머지는 진단 정확도를 높이는 선택 항목입니다.</p>
+    <form class="form-box reveal d2" action="https://formsubmit.co/contact@howmuchlab.com" method="POST">
+      <input type="hidden" name="_subject" value="[그로스랩] 무료 진단 신청">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://howmuchlab.com/growth-lab/audit-done.html">
+      <input type="text" name="_honey" style="display:none">
+      <div class="field">
+        <label for="f-url">스토어프론트 또는 대표 ASIN 링크</label>
+        <input type="url" id="f-url" name="스토어_링크" placeholder="https://www.amazon.com/..." required>
+        <div class="hint">아마존 US 기준. 스토어프론트가 없다면 대표 제품 상세페이지 링크면 충분합니다.</div>
+      </div>
+      <div class="field">
+        <label for="f-email">리포트 받을 이메일</label>
+        <input type="email" id="f-email" name="이메일" placeholder="you@brand.com" required>
+      </div>
+      <div class="field">
+        <label for="f-brand">브랜드명 / 카테고리 <span class="opt">선택</span></label>
+        <input type="text" id="f-brand" name="브랜드_카테고리" placeholder="예: 스킨케어 — 세럼">
+      </div>
+      <div class="field">
+        <label for="f-spend">월 광고비 규모 <span class="opt">선택</span></label>
+        <select id="f-spend" name="월_광고비">
+          <option value="" selected>선택 안 함</option>
+          <option>아직 광고 안 함</option>
+          <option>$1K 미만</option>
+          <option>$1K ~ $3K</option>
+          <option>$3K ~ $10K</option>
+          <option>$10K 이상</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-note">지금 가장 큰 고민 <span class="opt">선택</span></label>
+        <textarea id="f-note" name="고민" placeholder="예: 광고를 켜면 팔리는데 끄면 매출이 사라집니다"></textarea>
+      </div>
+      <div class="consent">
+        <input type="checkbox" id="f-consent" required>
+        <label for="f-consent">진단 리포트 발송 목적으로 이메일을 수집하는 데 동의합니다. 리포트 발송 외 광고성 메일은 보내지 않습니다. <a href="https://howmuchlab.com/privacy.html" target="_blank" rel="noopener">개인정보처리방침</a></label>
+      </div>
+      <button class="btn-pill" type="submit">무료 진단 신청하기</button>
+      <p class="form-note">48시간 내 리포트가 이메일로 발송됩니다. 후속 영업 전화는 하지 않습니다.<br>폼이 동작하지 않으면 <a href="mailto:contact@howmuchlab.com?subject=%5B%EA%B7%B8%EB%A1%9C%EC%8A%A4%EB%9E%A9%5D%20%EB%AC%B4%EB%A3%8C%20%EC%A7%84%EB%8B%A8%20%EC%8B%A0%EC%B2%AD&body=%EC%8A%A4%ED%86%A0%EC%96%B4%20%EB%A7%81%ED%81%AC%3A%20%0A%EB%B8%8C%EB%9E%9C%EB%93%9C%2F%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%3A%20" style="color:var(--link);text-decoration:none">이메일로 직접 신청</a>할 수 있습니다.</p>
+    </form>
+  </div>
+</section>
+
+<section id="how" class="band">
+  <div class="wrap" style="text-align:center">
+    <div class="eyebrow reveal">Process</div>
+    <h2 class="reveal">신청 후 진행</h2>
+    <p class="sub reveal d1" style="margin-left:auto;margin-right:auto"></p>
+    <div class="step-grid">
+      <div class="step reveal">
+        <span class="s-num">1</span>
+        <h3>신청 접수</h3>
+        <p>링크와 이메일만 남기면 끝. 계정 접근 권한도, 통화도 필요 없습니다.</p>
+      </div>
+      <div class="step reveal d1">
+        <span class="s-num">2</span>
+        <h3>48시간 내 리포트 발송</h3>
+        <p>공개 데이터 기반 진단 리포트가 이메일로 도착합니다. 여기까지 무료입니다.</p>
+      </div>
+      <div class="step reveal d2">
+        <span class="s-num">3</span>
+        <h3>다음 단계는 선택</h3>
+        <p>광고 실데이터까지 뜯어보는 정밀 진단(유료)이 필요하면 그때 결정하시면 됩니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap" style="text-align:center">
+    <div class="eyebrow reveal">FAQ</div>
+    <h2 class="reveal">자주 묻는 질문</h2>
+    <p class="sub reveal d1" style="margin-left:auto;margin-right:auto"></p>
+    <div class="faq-item reveal">
+      <h3>정말 무료인가요? 조건이 뭔가요?</h3>
+      <p>무료이고 조건이 없습니다. 무료 진단은 공개 데이터만으로 만들 수 있는 수준까지만 다룹니다. 그 리포트가 유용했다면, 광고 실데이터 기반 정밀 진단(유료)을 다음 단계로 선택할 수 있을 뿐입니다.</p>
+    </div>
+    <div class="faq-item reveal">
+      <h3>무료 진단과 유료 진단의 차이는요?</h3>
+      <p>무료 진단은 밖에서 보이는 것(리스팅·리뷰·가격·이미지)을 다룹니다. 유료 진단은 셀러센트럴 안의 것(캠페인 구조·검색어 리포트·낭비 금액·예산 재배분안)을 다룹니다. 광고비가 새는 정확한 지점과 금액은 실데이터 없이는 알 수 없습니다.</p>
+    </div>
+    <div class="faq-item reveal">
+      <h3>내 스토어 정보가 다른 곳에 쓰이지 않나요?</h3>
+      <p>진단 리포트 작성 외 목적으로 사용하지 않으며, 리포트는 신청자 본인에게만 발송됩니다. 이메일 주소는 리포트 발송 목적으로만 수집합니다.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong>그로스랩</strong> — K-뷰티 아마존 광고 수익성 컨설팅. 본 사이트의 실적 수치는 운영 중인 실제 계정의 셀러센트럴 데이터 기준이며, 신원·소속은 상담 단계에서 공개합니다.</p>
+  </div>
+<div class="wrap sitewide-links" style="margin-top:16px;font-size:13px;opacity:.8"><a href="https://howmuchlab.com/" style="color:inherit;text-decoration:none;font-weight:700;margin-right:14px">홈</a><a href="https://howmuchlab.com/about.html" style="color:inherit;text-decoration:none;font-weight:700;margin-right:14px">소개</a><a href="https://howmuchlab.com/contact.html" style="color:inherit;text-decoration:none;font-weight:700;margin-right:14px">문의</a><a href="https://howmuchlab.com/privacy.html" style="color:inherit;text-decoration:none;font-weight:700">개인정보처리방침</a><a href="https://howmuchlab.com/terms.html" style="color:inherit;text-decoration:none;font-weight:700;margin-left:14px">이용약관</a></div>
+</footer>
+
+<script>
+(function () {
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = document.querySelectorAll('.reveal');
+  if (reduced || !('IntersectionObserver' in window)) {
+    els.forEach(function (el) { el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('in');
+      io.unobserve(entry.target);
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(function (el) { io.observe(el); });
+})();
+</script>
+
+</body>
+</html>
