@@ -224,6 +224,7 @@
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_next" value="https://howmuchlab.com/growth-lab/audit-done.html">
       <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="유입경로" id="leadSrc" value="direct">
       <div class="field">
         <label for="f-url">스토어프론트 또는 대표 ASIN 링크</label>
         <input type="url" id="f-url" name="스토어_링크" placeholder="https://www.amazon.com/..." required>
@@ -346,5 +347,19 @@
 })();
 </script>
 
+<script>
+(function(){
+  try {
+    var p = new URLSearchParams(location.search);
+    var src = p.get('utm_source') || '';
+    if (src && /^[a-z0-9_-]{1,30}$/.test(src)) sessionStorage.setItem('lead_src', src);
+    var saved = sessionStorage.getItem('lead_src');
+    if (!saved && document.referrer) {
+      try { saved = 'ref:' + new URL(document.referrer).hostname.slice(0, 40); } catch (e) {}
+    }
+    if (saved) document.getElementById('leadSrc').value = saved;
+  } catch (e) {}
+})();
+</script>
 </body>
 </html>
