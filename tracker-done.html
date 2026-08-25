@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>다운로드 — 아마존 손익·TACoS 트래커</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+  :root{--ink:#171717;--body:#4d4d4d;--mute:#8f8f8f;--hairline:#ebebeb;--canvas:#fafafa;--elevated:#fff;--link:#0070f3;--g-dev-a:#007cf0;--g-pre-a:#7928ca;--g-pre-b:#ff0080;--sans:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Noto Sans KR",Arial,sans-serif;--mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:var(--sans);color:var(--ink);background:var(--canvas);line-height:1.5;-webkit-font-smoothing:antialiased;display:flex;min-height:100vh;align-items:center;justify-content:center;padding:24px}
+  .box{max-width:520px;text-align:center;background:var(--elevated);border:1px solid var(--hairline);border-radius:16px;padding:56px 40px;box-shadow:0 1px 1px rgba(0,0,0,.04)}
+  .eyebrow{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:var(--mute)}
+  h1{margin-top:16px;font-size:clamp(26px,5vw,34px);font-weight:600;letter-spacing:-0.04em;line-height:1.15}
+  h1 em{font-style:normal;background:linear-gradient(90deg,var(--g-dev-a),var(--g-pre-a) 55%,var(--g-pre-b));-webkit-background-clip:text;background-clip:text;color:transparent}
+  p{margin-top:16px;font-size:15px;line-height:1.7;color:var(--body)}
+  .dl{display:flex;flex-direction:column;gap:10px;margin-top:28px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 24px;border-radius:100px;background:var(--ink);color:#fff;font-size:14.5px;font-weight:500;text-decoration:none;transition:opacity .15s}
+  .btn.alt{background:#fff;color:var(--ink);border:1px solid var(--hairline)}
+  .btn:hover{opacity:.85}
+  .sub-link{display:block;margin-top:22px;font-size:13px;color:var(--link);text-decoration:none}
+  .sub-link:hover{text-decoration:underline}
+  .note{margin-top:24px;padding-top:18px;border-top:1px solid var(--hairline);font-size:12.5px;color:var(--mute);line-height:1.7}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5GXQXQES4V"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-5GXQXQES4V');gtag('event','tracker_request_complete');</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body>
+<div class="box">
+  <div class="eyebrow">Ready</div>
+  <h1>바로 <em>받으실 수</em> 있습니다</h1>
+  <p>아래 두 파일을 내려받으세요. 엑셀은 사용법·월별 트래커·손익분기 계산기 3개 시트로 되어 있고, PDF는 숫자 해석 가이드입니다.</p>
+  <div class="dl">
+    <a class="btn" href="/growth-lab/files/e463b0f47a29/amazon-profit-tacos-tracker-v1.xlsx" download onclick="gtag('event','tracker_download',{file:'xlsx'})">트래커 엑셀 받기</a>
+    <a class="btn alt" href="/growth-lab/files/e463b0f47a29/amazon-tacos-guide-v1.pdf" download onclick="gtag('event','tracker_download',{file:'pdf'})">가이드 PDF 받기</a>
+  </div>
+  <a class="sub-link" href="/growth-lab/audit.html">계정을 직접 진단받고 싶다면 — 무료 진단 신청</a>
+  <div class="note">시트에 넣은 숫자는 어디에도 전송되지 않습니다. 계산은 전부 엑셀 안에서만 이뤄집니다.</div>
+</div>
+</body>
+</html>
